@@ -46,7 +46,7 @@
             btncadastrar = new Button();
             btnexcluir = new Button();
             label8 = new Label();
-            btnpesquisar = new Button();
+            btnPesquisar = new Button();
             dataGridView1 = new DataGridView();
             txtpesquisar = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -224,19 +224,18 @@
             label8.TabIndex = 20;
             label8.Text = "Pesquisar";
             // 
-            // btnpesquisar
+            // btnPesquisar
             // 
-            btnpesquisar.BackColor = Color.PaleVioletRed;
-            btnpesquisar.Cursor = Cursors.Hand;
-            btnpesquisar.FlatStyle = FlatStyle.Flat;
-            btnpesquisar.ForeColor = SystemColors.InactiveBorder;
-            btnpesquisar.Location = new Point(755, 43);
-            btnpesquisar.Name = "btnpesquisar";
-            btnpesquisar.Size = new Size(94, 29);
-            btnpesquisar.TabIndex = 21;
-            btnpesquisar.Text = "Buscar";
-            btnpesquisar.UseVisualStyleBackColor = false;
-            btnpesquisar.Click += btnpesquisar_Click;
+            btnPesquisar.BackColor = Color.PaleVioletRed;
+            btnPesquisar.Cursor = Cursors.Hand;
+            btnPesquisar.FlatStyle = FlatStyle.Flat;
+            btnPesquisar.ForeColor = SystemColors.InactiveBorder;
+            btnPesquisar.Location = new Point(755, 43);
+            btnPesquisar.Name = "btnPesquisar";
+            btnPesquisar.Size = new Size(94, 29);
+            btnPesquisar.TabIndex = 21;
+            btnPesquisar.Text = "Buscar";
+            btnPesquisar.UseVisualStyleBackColor = false;
             // 
             // dataGridView1
             // 
@@ -247,8 +246,6 @@
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(348, 217);
             dataGridView1.TabIndex = 22;
-            dataGridView1.CellClick += dataGridView1_CellClick;
-            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // txtpesquisar
             // 
@@ -266,7 +263,7 @@
             ClientSize = new Size(934, 530);
             Controls.Add(txtpesquisar);
             Controls.Add(dataGridView1);
-            Controls.Add(btnpesquisar);
+            Controls.Add(btnPesquisar);
             Controls.Add(label8);
             Controls.Add(btnexcluir);
             Controls.Add(btncadastrar);
@@ -287,7 +284,6 @@
             Controls.Add(label1);
             Name = "Form1";
             Text = "Form1";
-            Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -313,7 +309,7 @@
         private Button btncadastrar;
         private Button btnexcluir;
         private Label label8;
-        private Button btnpesquisar;
+        private Button btnPesquisar;
         private DataGridView dataGridView1;
         private TextBox txtpesquisar;
     }

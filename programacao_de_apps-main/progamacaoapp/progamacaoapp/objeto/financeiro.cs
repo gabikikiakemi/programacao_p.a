@@ -22,7 +22,7 @@ namespace progamacaoapp.objeto
         public bool cadastrar(conexao conexao)
         {
             bool resultado = false;
-            string sql = "insert into financeiro(descricao,valor,tipo,servico,data_lacamento,pgto)" +
+            string sql = "insert into financeiro(descricao,valor,tipo,servico,data_lancamento,pgto)" +
                 " values(@descricao, @valor, @tipo, @servico, @data, @pgto)";
             string[] campos = { "@descricao", "@valor", "@tipo", "@servico", "@data", "@pgto" };
             object[] valores = { descricao, valor, tipo, servico, data_lancamento, pgto };
@@ -37,8 +37,8 @@ namespace progamacaoapp.objeto
         public bool editar(conexao conexao)
         {
             bool resultado = false;
-            string sql = "Update financeiro set descricao= @descricao,valor=@valor,tipo=@tipo, servico=@servico,data_lancamento=@data,pgto=@pgto);"+
-                "where codigo_lancamento=@codigo";
+            string sql = " Update financeiro set descricao= @descricao,valor=@valor,tipo=@tipo, servico=@servico,data_lancamento=@data,pgto=@pgto "+
+                " where cod_financeiro=@codigo ";
             string[] campos = { "@descricao", "@valor", "@tipo", "@servico", "@data", "@pgto", "@codigo" };
             object[] valores = { descricao, valor, tipo, servico, data_lancamento, pgto, id };
             if (conexao.cadastrar(campos, valores, sql) >= 1)
@@ -47,6 +47,18 @@ namespace progamacaoapp.objeto
             }
             return resultado;
         }
+        
+        public bool excluir(conexao com)
+        {
+            bool resultado = false;
+            string sql = "delete from financeiro where cod_financeiro=@codigo";
+            string[] campos = { "@codigo" };
+            object[] valores = { id };
+            if (com.cadastrar(campos,valores, sql) >= 1)
+            {  resultado = true; }  
+            return resultado;
+        }
+
     }
 
 }
