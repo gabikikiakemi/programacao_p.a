@@ -79,45 +79,45 @@ namespace progamacaoapp
             com.getConexao();
             if (string.IsNullOrEmpty(txtcodigo.Text))
             {
-                dataGridView1.DataSource = com.obterdados("select * from financeiro where descricao like %'" +txtpesquisar.Text + "'%");
+                dataGridView1.DataSource = com.obterdados("select * from financeiro where descricao like %'" + txtpesquisar.Text + "'%");
             }
         }
 
 
-            private void Form1_Load(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            conexao com = new conexao();
+            com.getConexao();
+            dataGridView1.DataSource = com.obterdados("select *from financeiro");
+            cboservico.Items.Add("salario");
+            cboservico.Items.Add("despesas");
+            cbotipo.Items.Add("entrada");
+            cbotipo.Items.Add("saida");
+
+
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            int codigo = 0;
+            codigo = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex].Value);
+            txtcodigo.Text = codigo.ToString();
+            txtdescricao.Text = dataGridView1.Rows[e.RowIndex].Cells["descricao"].Value.ToString();
+            txtvalor.Text = dataGridView1.Rows[e.RowIndex].Cells["valor"].Value.ToString();
+            cboservico.Text = dataGridView1.Rows[e.RowIndex].Cells["servico"].Value.ToString();
+            cbotipo.Text = dataGridView1.Rows[e.RowIndex].Cells["tipo"].Value.ToString();
+            data_lancamento.Value = (DateTime)dataGridView1.Rows[e.RowIndex].Cells["data_lancamento"].Value;
+            bool pago = Convert.ToBoolean(dataGridView1.Rows[e.RowIndex].Cells["pgto"].Value.ToString());
+            if (pago == true)
             {
-                conexao com = new conexao();
-                com.getConexao();
-                dataGridView1.DataSource = com.obterdados("select *from financeiro");
-                cboservico.Items.Add("salario");
-                cboservico.Items.Add("despesas");
-                cbotipo.Items.Add("entrada");
-                cbotipo.Items.Add("saida");
-
-
+                chkpagamento.Checked = true;
             }
-
-            private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+            else
             {
-
-                int codigo = 0;
-                codigo = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex].Value);
-                txtcodigo.Text = codigo.ToString();
-                txtdescricao.Text = dataGridView1.Rows[e.RowIndex].Cells["descricao"].Value.ToString();
-                txtvalor.Text = dataGridView1.Rows[e.RowIndex].Cells["valor"].Value.ToString();
-                cboservico.Text = dataGridView1.Rows[e.RowIndex].Cells["servico"].Value.ToString();
-                cbotipo.Text = dataGridView1.Rows[e.RowIndex].Cells["tipo"].Value.ToString();
-                data_lancamento.Value = (DateTime)dataGridView1.Rows[e.RowIndex].Cells["data_lancamento"].Value;
-                bool pago = Convert.ToBoolean(dataGridView1.Rows[e.RowIndex].Cells["pgto"].Value.ToString());
-                if (pago == true)
-                {
-                    chkpagamento.Checked = true;
-                }
-                else
-                {
-                    chkpagamento.Checked = false;
-                }
+                chkpagamento.Checked = false;
             }
         }
     }
+}
 
