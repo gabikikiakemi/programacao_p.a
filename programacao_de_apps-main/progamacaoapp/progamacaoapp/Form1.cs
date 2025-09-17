@@ -118,6 +118,12 @@ namespace progamacaoapp
                 chkpagamento.Checked = false;
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Forms2 button1_Click = new Forms2();
+            button1_Click.ShowDialog();
+        }
     }
 }
 

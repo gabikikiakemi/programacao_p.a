@@ -70,3 +70,4 @@ C:\Users\Aluno\Documents\GitHub\programacao_p.a\programacao_de_apps-main\progama
 C:\Users\Aluno\Documents\GitHub\programacao_p.a\programacao_de_apps-main\progamacaoapp\progamacaoapp\obj\Debug\net8.0-windows\progamacaoapp.pdb
 C:\Users\Aluno\Documents\GitHub\programacao_p.a\programacao_de_apps-main\progamacaoapp\progamacaoapp\obj\Debug\net8.0-windows\progamacaoapp.genruntimeconfig.cache
 C:\Users\Aluno\Documents\GitHub\programacao_p.a\programacao_de_apps-main\progamacaoapp\progamacaoapp\obj\Debug\net8.0-windows\ref\progamacaoapp.dll
+C:\Users\Aluno\Documents\GitHub\programacao_p.a\programacao_de_apps-main\progamacaoapp\progamacaoapp\obj\Debug\net8.0-windows\progamacaoapp.Forms2.resources

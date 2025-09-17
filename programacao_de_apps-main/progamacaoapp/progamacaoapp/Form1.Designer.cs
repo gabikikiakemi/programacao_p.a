@@ -49,6 +49,7 @@
             btnPesquisar = new Button();
             dataGridView1 = new DataGridView();
             txtpesquisar = new TextBox();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -255,12 +256,23 @@
             txtpesquisar.TabIndex = 23;
             txtpesquisar.TextChanged += txtpesquisar_TextChanged;
             // 
+            // button1
+            // 
+            button1.Location = new Point(679, 363);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 29);
+            button1.TabIndex = 24;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LavenderBlush;
             ClientSize = new Size(934, 530);
+            Controls.Add(button1);
             Controls.Add(txtpesquisar);
             Controls.Add(dataGridView1);
             Controls.Add(btnPesquisar);
@@ -313,5 +325,6 @@
         private Button btnPesquisar;
         private DataGridView dataGridView1;
         private TextBox txtpesquisar;
+        private Button button1;
     }
 }

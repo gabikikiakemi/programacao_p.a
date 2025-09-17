@@ -22,6 +22,7 @@ namespace progamacaoapp.objeto
         public bool cadastrar(conexao conexao)
         {
             bool resultado = false;
+
             string sql = "insert into financeiro(descricao,valor,tipo,servico,data_lancamento,pgto)" +
                 " values(@descricao, @valor, @tipo, @servico, @data, @pgto)";
             string[] campos = { "@descricao", "@valor", "@tipo", "@servico", "@data", "@pgto" };
