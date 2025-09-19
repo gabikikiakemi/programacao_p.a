@@ -237,6 +237,7 @@
             btnPesquisar.TabIndex = 21;
             btnPesquisar.Text = "Buscar";
             btnPesquisar.UseVisualStyleBackColor = false;
+            btnPesquisar.Click += btnPesquisar_Click_1;
             // 
             // dataGridView1
             // 
@@ -258,12 +259,13 @@
             // 
             // button1
             // 
-            button1.Location = new Point(679, 363);
+            button1.BackColor = Color.PaleVioletRed;
+            button1.Location = new Point(775, 381);
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
             button1.TabIndex = 24;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            button1.Text = "Página 2";
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // Form1

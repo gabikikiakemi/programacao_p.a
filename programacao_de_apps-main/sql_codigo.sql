@@ -7,7 +7,7 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,N
 -- -----------------------------------------------------
 -- Schema gerenciamento
 -- -----------------------------------------------------
-
+drop database gerenciamento;
 -- -----------------------------------------------------
 -- Schema gerenciamento
 -- -----------------------------------------------------
@@ -19,7 +19,7 @@ USE `gerenciamento` ;
 -- Table `gerenciamento`.`produto`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `gerenciamento`.`produto` (
-  `cod_produto` INT NOT NULL,
+  `cod_produto` INT NOT NULL auto_increment,
   `nome` VARCHAR(45) NULL,
   `quantidade` INT NULL,
   `preco` DECIMAL(5,2) NULL,
@@ -35,7 +35,7 @@ ENGINE = InnoDB;
 -- Table `gerenciamento`.`funcionario`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `gerenciamento`.`funcionario` (
-  `cod_funcionario` INT NOT NULL,
+  `cod_funcionario` INT NOT NULL auto_increment,
   `nome` VARCHAR(45) NULL,
   `cargo` VARCHAR(45) NULL,
   `data_admissao` DATE NULL,
@@ -50,7 +50,7 @@ ENGINE = InnoDB;
 -- Table `gerenciamento`.`financeiro`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `gerenciamento`.`financeiro` (
-  `cod_financeiro` INT NOT NULL,
+  `cod_financeiro` INT NOT NULL auto_increment,
   `descricao` VARCHAR(45) NULL,
   `valor` DECIMAL(5,2) NULL,
   `tipo` VARCHAR(45) NULL,

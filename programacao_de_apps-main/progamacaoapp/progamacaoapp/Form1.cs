@@ -124,6 +124,21 @@ namespace progamacaoapp
             Forms2 button1_Click = new Forms2();
             button1_Click.ShowDialog();
         }
+
+        private void btnPesquisar_Click_1(object sender, EventArgs e)
+        {
+            conexao com = new conexao();
+            com.getConexao();
+            if (string.IsNullOrEmpty(txtpesquisar.Text) )
+            {
+                dataGridView1.DataSource = com.obterdados("select * from financeiro");
+
+            }
+            else
+            {
+                dataGridView1.DataSource = com.obterdados("select * from financeiro where descricao like '%" + txtpesquisar.Text + "%'");
+            }
+        }
     }
 }
 

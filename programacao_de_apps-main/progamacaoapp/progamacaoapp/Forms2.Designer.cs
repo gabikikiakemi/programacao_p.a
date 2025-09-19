@@ -55,6 +55,7 @@
             btnpdf.TabIndex = 1;
             btnpdf.Text = "Gerar PDF";
             btnpdf.UseVisualStyleBackColor = false;
+            btnpdf.Click += btnpdf_Click;
             // 
             // btngrafico
             // 
