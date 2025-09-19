@@ -96,10 +96,10 @@ namespace progamacaoapp
                 com.getConexao();
                 DataTable cliente = new DataTable();
 
-                /*
+                
 
                 cliente = com.obterdados("select * from financeiro");
-                PdfPTable table = new PdfPTable(6);
+                PdfPTable table = new PdfPTable(5);
                 table.WidthPercentage = 100;
                 table.SetWidths(new float[] { 40F, 15F, 20f, 25f, 15f });
                 table.AddCell(new Phrase("descricaoo"));
@@ -119,7 +119,7 @@ namespace progamacaoapp
 
 
             doc.Add(table);
-                */
+                
             doc.Close();
             MessageBox.Show("Relatorio foi gerado com sucesso");
             Process.Start(caminhoPDF);
