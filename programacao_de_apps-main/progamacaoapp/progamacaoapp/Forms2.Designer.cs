@@ -67,6 +67,7 @@
             btngrafico.TabIndex = 2;
             btngrafico.Text = "Gerar Gráfico";
             btngrafico.UseVisualStyleBackColor = false;
+            btngrafico.Click += btngrafico_Click;
             // 
             // Forms2
             // 

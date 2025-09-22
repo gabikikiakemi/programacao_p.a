@@ -21,8 +21,12 @@ using iTextSharp.text;
 using System.Net.Http.Json;
 using System.Diagnostics;
 using Document = iTextSharp.text.Document;
+using System.Windows.Forms.DataVisualization.Charting;
+
 using MySqlX.XDevAPI.Relational;
 using System.Linq.Expressions;
+using System.Drawing.Text;
+
 
 namespace progamacaoapp
 {
@@ -96,7 +100,7 @@ namespace progamacaoapp
                 com.getConexao();
                 DataTable cliente = new DataTable();
 
-                
+
 
                 cliente = com.obterdados("select * from financeiro");
                 PdfPTable table = new PdfPTable(5);
@@ -110,26 +114,97 @@ namespace progamacaoapp
 
                 for (int i = 0; i < cliente.Rows.Count; i++)
                 {
-                    table.AddCell(new Phrase( cliente.Rows[i][1].ToString()));
-                table.AddCell(new Phrase( cliente.Rows[i][2].ToString()));
-                table.AddCell(new Phrase( cliente.Rows[i][3].ToString()));
-                table.AddCell(new Phrase( cliente.Rows[i][4].ToString()));
-                table.AddCell(new Phrase( cliente.Rows[i][5].ToString()));
+                    table.AddCell(new Phrase(cliente.Rows[i][1].ToString()));
+                    table.AddCell(new Phrase(cliente.Rows[i][2].ToString()));
+                    table.AddCell(new Phrase(cliente.Rows[i][3].ToString()));
+                    table.AddCell(new Phrase(cliente.Rows[i][4].ToString()));
+                    table.AddCell(new Phrase(cliente.Rows[i][5].ToString()));
                 }
 
 
-            doc.Add(table);
-                
-            doc.Close();
-            MessageBox.Show("Relatorio foi gerado com sucesso");
-            Process.Start(caminhoPDF);
+                doc.Add(table);
+
+                doc.Close();
+                MessageBox.Show("Relatorio foi gerado com sucesso");
+                Process.Start(caminhoPDF);
             }
-             catch (Exception ex) 
+            catch (Exception ex)
             {
-                 MessageBox.Show("Erro ao gerar o PDF", ex.Message);
+                MessageBox.Show("Erro ao gerar o PDF", ex.Message);
             }
 
         }
-     }
+
+        private void btngrafico_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chart1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ConfigurarChart()
+        {
+            fluxocaixa.Titles.Clear();
+            fluxocaixa.Series.Clear();
+            fluxocaixa.ChartArea.Clear();
+            ChartArea chartArea = new ChartArea("MainArea");
+            fluxoCaixa.ChartArea.Add(chartArea);
+            chartArea.AxisX.MajorGrid.Enabled = false;
+            chartArea.AxisY.MajorGrid.LineColor = Color.LightBlue;
+            chartArea.AxisY.LabelStyle.Format = "C2";
+            chartArea.AxisY.Title = "valor (R$)";
+            chartArea.AxisX.Title = "Período";
+
+            Series seriesEntrada = new System.Windows.Forms.DataVisualization.Charting.Series("Entrada");
+            seriesEntrada.ChartType = SeriesChartType.Column;
+            seriesEntrada.Color = Color.LightPink;
+            SeriesEntrada.IsValueShownAsLabel = true;
+            seriesEntrada.LabelFormat = "C2";
+            fluxoCaixa.Series.Add(seriesEntrada);
+
+        }
+        private void GerarRelatorio()
+        {
+            DataTable dtMovimentacao = new DataTable();
+            conexao com = new conexao();
+            try
+            {
+
+                com.getConexao();
+                string query = "Select data_lancamento, valor, tipo from financeiro";
+
+                mysqldataAdapter adapter = new MySqlDataAdapter(query, com);
+                adapter.fill(dtMovimentacao);
+
+                ProcessarDadosGraficos(dtMovimentacao);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao gerar re");
+            }
+        }
+        private void ProcessarDadosGraficos(DataTable dados)
+        {
+            foreach (var series in fluxoCaixa.Series)
+            {
+                series.Points.Clear();
+            }
+            var grupos = dados.AsEnumerable().GroupBy(row =>
+            {
+
+
+                DateTime data = row.Field<DateTime>("data_lancamento");
+            }).OrderBy(global => global.Key);
+
+            fluxocaixa.ChartAreas["MainArea"].AxisX.LabelStyle.Formar = "dd/mm"
+        decimal entradas = grupos.Where(ref=> ref.Field<string>("Tipo") == "Entrada").Sum(r => r.fiel<deciaml>("valor"));
+            fluxocaixa.Series["Entradas"].Points.AddXY(Label, entrada);
+        }
+    }
 }
+
 
