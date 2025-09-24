@@ -3,32 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Aluno\\Documents\\GitHub\\programacao_p.a\\programacao_de_apps-main\\progamacaoapp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4E6E291A-6617-467F-810B-2A90B7E05FCE}|progamacaoapp\\progamacaoapp.csproj|c:\\users\\aluno\\documents\\github\\programacao_p.a\\programacao_de_apps-main\\progamacaoapp\\progamacaoapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E6E291A-6617-467F-810B-2A90B7E05FCE}|progamacaoapp\\progamacaoapp.csproj|solutionrelative:progamacaoapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E6E291A-6617-467F-810B-2A90B7E05FCE}|progamacaoapp\\progamacaoapp.csproj|c:\\users\\aluno\\documents\\github\\programacao_p.a\\programacao_de_apps-main\\progamacaoapp\\progamacaoapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4E6E291A-6617-467F-810B-2A90B7E05FCE}|progamacaoapp\\progamacaoapp.csproj|solutionrelative:progamacaoapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4E6E291A-6617-467F-810B-2A90B7E05FCE}|progamacaoapp\\progamacaoapp.csproj|c:\\users\\aluno\\documents\\github\\programacao_p.a\\programacao_de_apps-main\\progamacaoapp\\progamacaoapp\\forms2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4E6E291A-6617-467F-810B-2A90B7E05FCE}|progamacaoapp\\progamacaoapp.csproj|solutionrelative:progamacaoapp\\forms2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E6E291A-6617-467F-810B-2A90B7E05FCE}|progamacaoapp\\progamacaoapp.csproj|c:\\users\\aluno\\documents\\github\\programacao_p.a\\programacao_de_apps-main\\progamacaoapp\\progamacaoapp\\grafico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4E6E291A-6617-467F-810B-2A90B7E05FCE}|progamacaoapp\\progamacaoapp.csproj|solutionrelative:progamacaoapp\\grafico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E6E291A-6617-467F-810B-2A90B7E05FCE}|progamacaoapp\\progamacaoapp.csproj|c:\\users\\aluno\\documents\\github\\programacao_p.a\\programacao_de_apps-main\\progamacaoapp\\progamacaoapp\\objeto\\financeiro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E6E291A-6617-467F-810B-2A90B7E05FCE}|progamacaoapp\\progamacaoapp.csproj|solutionrelative:progamacaoapp\\objeto\\financeiro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4E6E291A-6617-467F-810B-2A90B7E05FCE}|progamacaoapp\\progamacaoapp.csproj|c:\\users\\aluno\\documents\\github\\programacao_p.a\\programacao_de_apps-main\\progamacaoapp\\progamacaoapp\\forms2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E6E291A-6617-467F-810B-2A90B7E05FCE}|progamacaoapp\\progamacaoapp.csproj|solutionrelative:progamacaoapp\\forms2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E6E291A-6617-467F-810B-2A90B7E05FCE}|progamacaoapp\\progamacaoapp.csproj|c:\\users\\aluno\\documents\\github\\programacao_p.a\\programacao_de_apps-main\\progamacaoapp\\progamacaoapp\\objeto\\conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E6E291A-6617-467F-810B-2A90B7E05FCE}|progamacaoapp\\progamacaoapp.csproj|solutionrelative:progamacaoapp\\objeto\\conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4E6E291A-6617-467F-810B-2A90B7E05FCE}|progamacaoapp\\progamacaoapp.csproj|c:\\users\\aluno\\documents\\github\\programacao_p.a\\programacao_de_apps-main\\progamacaoapp\\progamacaoapp\\grafico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E6E291A-6617-467F-810B-2A90B7E05FCE}|progamacaoapp\\progamacaoapp.csproj|solutionrelative:progamacaoapp\\grafico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E6E291A-6617-467F-810B-2A90B7E05FCE}|progamacaoapp\\progamacaoapp.csproj|c:\\users\\aluno\\documents\\github\\programacao_p.a\\programacao_de_apps-main\\progamacaoapp\\progamacaoapp\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E6E291A-6617-467F-810B-2A90B7E05FCE}|progamacaoapp\\progamacaoapp.csproj|solutionrelative:progamacaoapp\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E6E291A-6617-467F-810B-2A90B7E05FCE}|progamacaoapp\\progamacaoapp.csproj|c:\\users\\aluno\\documents\\github\\programacao_p.a\\programacao_de_apps-main\\progamacaoapp\\progamacaoapp\\objeto\\financeiro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E6E291A-6617-467F-810B-2A90B7E05FCE}|progamacaoapp\\progamacaoapp.csproj|solutionrelative:progamacaoapp\\objeto\\financeiro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4E6E291A-6617-467F-810B-2A90B7E05FCE}|progamacaoapp\\progamacaoapp.csproj|c:\\users\\aluno\\documents\\github\\programacao_p.a\\programacao_de_apps-main\\progamacaoapp\\progamacaoapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4E6E291A-6617-467F-810B-2A90B7E05FCE}|progamacaoapp\\progamacaoapp.csproj|solutionrelative:progamacaoapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,53 +38,37 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "conexao.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno\\Documents\\GitHub\\programacao_p.a\\programacao_de_apps-main\\progamacaoapp\\progamacaoapp\\objeto\\conexao.cs",
-              "RelativeDocumentMoniker": "progamacaoapp\\objeto\\conexao.cs",
-              "ToolTip": "C:\\Users\\Aluno\\Documents\\GitHub\\programacao_p.a\\programacao_de_apps-main\\progamacaoapp\\progamacaoapp\\objeto\\conexao.cs",
-              "RelativeToolTip": "progamacaoapp\\objeto\\conexao.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAvAAAA",
+              "DocumentIndex": 1,
+              "Title": "grafico.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Documents\\GitHub\\programacao_p.a\\programacao_de_apps-main\\progamacaoapp\\progamacaoapp\\grafico.cs",
+              "RelativeDocumentMoniker": "progamacaoapp\\grafico.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Documents\\GitHub\\programacao_p.a\\programacao_de_apps-main\\progamacaoapp\\progamacaoapp\\grafico.cs [Projeto]",
+              "RelativeToolTip": "progamacaoapp\\grafico.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T11:37:34.139Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-24T13:08:28.046Z",
+              "EditorCaption": " [Projeto]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno\\Documents\\GitHub\\programacao_p.a\\programacao_de_apps-main\\progamacaoapp\\progamacaoapp\\Form1.cs",
-              "RelativeDocumentMoniker": "progamacaoapp\\Form1.cs",
-              "ToolTip": "C:\\Users\\Aluno\\Documents\\GitHub\\programacao_p.a\\programacao_de_apps-main\\progamacaoapp\\progamacaoapp\\Form1.cs",
-              "RelativeToolTip": "progamacaoapp\\Form1.cs",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAmwDsAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T11:34:55.255Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Forms2.cs [Projeto]",
               "DocumentMoniker": "C:\\Users\\Aluno\\Documents\\GitHub\\programacao_p.a\\programacao_de_apps-main\\progamacaoapp\\progamacaoapp\\Forms2.cs",
               "RelativeDocumentMoniker": "progamacaoapp\\Forms2.cs",
               "ToolTip": "C:\\Users\\Aluno\\Documents\\GitHub\\programacao_p.a\\programacao_de_apps-main\\progamacaoapp\\progamacaoapp\\Forms2.cs [Projeto]",
               "RelativeToolTip": "progamacaoapp\\Forms2.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T14:01:26.262Z",
+              "WhenOpened": "2025-09-24T13:08:23.42Z",
               "EditorCaption": " [Projeto]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "financeiro.cs",
               "DocumentMoniker": "C:\\Users\\Aluno\\Documents\\GitHub\\programacao_p.a\\programacao_de_apps-main\\progamacaoapp\\progamacaoapp\\objeto\\financeiro.cs",
               "RelativeDocumentMoniker": "progamacaoapp\\objeto\\financeiro.cs",
               "ToolTip": "C:\\Users\\Aluno\\Documents\\GitHub\\programacao_p.a\\programacao_de_apps-main\\progamacaoapp\\progamacaoapp\\objeto\\financeiro.cs",
               "RelativeToolTip": "progamacaoapp\\objeto\\financeiro.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAAAkwEEAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-22T11:37:35.259Z",
               "EditorCaption": ""
@@ -101,14 +81,27 @@
               "RelativeDocumentMoniker": "progamacaoapp\\Forms2.cs",
               "ToolTip": "C:\\Users\\Aluno\\Documents\\GitHub\\programacao_p.a\\programacao_de_apps-main\\progamacaoapp\\progamacaoapp\\Forms2.cs",
               "RelativeToolTip": "progamacaoapp\\Forms2.cs",
-              "ViewState": "AQIAALsAAAAAAAAAAAApwM0AAAAJAAAA",
+              "ViewState": "AQIAAJAAAAAAAAAAAAAhwJgAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-22T11:34:46.539Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "grafico.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Documents\\GitHub\\programacao_p.a\\programacao_de_apps-main\\progamacaoapp\\progamacaoapp\\grafico.cs",
+              "RelativeDocumentMoniker": "progamacaoapp\\grafico.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Documents\\GitHub\\programacao_p.a\\programacao_de_apps-main\\progamacaoapp\\progamacaoapp\\grafico.cs",
+              "RelativeToolTip": "progamacaoapp\\grafico.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAYwB8AAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T13:02:02.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Form1.cs [Projeto]",
               "DocumentMoniker": "C:\\Users\\Aluno\\Documents\\GitHub\\programacao_p.a\\programacao_de_apps-main\\progamacaoapp\\progamacaoapp\\Form1.cs",
               "RelativeDocumentMoniker": "progamacaoapp\\Form1.cs",
@@ -117,23 +110,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-22T11:34:10.231Z",
               "EditorCaption": " [Projeto]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno\\Documents\\GitHub\\programacao_p.a\\programacao_de_apps-main\\progamacaoapp\\progamacaoapp\\Form1.Designer.cs",
-              "RelativeDocumentMoniker": "progamacaoapp\\Form1.Designer.cs",
-              "ToolTip": "C:\\Users\\Aluno\\Documents\\GitHub\\programacao_p.a\\programacao_de_apps-main\\progamacaoapp\\progamacaoapp\\Form1.Designer.cs",
-              "RelativeToolTip": "progamacaoapp\\Form1.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T13:01:23.742Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }

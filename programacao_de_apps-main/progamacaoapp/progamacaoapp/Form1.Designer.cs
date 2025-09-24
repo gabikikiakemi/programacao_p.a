@@ -1,4 +1,6 @@
-﻿namespace progamacaoapp
+﻿using System.Windows.Forms.DataVisualization.Charting;
+
+namespace progamacaoapp
 {
     partial class Form1
     {
@@ -328,5 +330,6 @@
         private DataGridView dataGridView1;
         private TextBox txtpesquisar;
         private Button button1;
+      
     }
 }

@@ -35,6 +35,7 @@ namespace progamacaoapp
         public Forms2()
         {
             InitializeComponent();
+            ConfigurarChart();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -147,7 +148,6 @@ namespace progamacaoapp
 
         private void ConfigurarChart()
         {
-            fluxocaixa.Titles.Clear();
             fluxocaixa.Series.Clear();
             fluxocaixa.ChartArea.Clear();
             ChartArea chartArea = new ChartArea("MainArea");
@@ -159,7 +159,7 @@ namespace progamacaoapp
             chartArea.AxisX.Title = "Período";
 
             Series seriesEntrada = new System.Windows.Forms.DataVisualization.Charting.Series("Entrada");
-            seriesEntrada.ChartType = SeriesChartType.Column;
+            seriesEntrada.ChartType = Series.ChartType.Column;
             seriesEntrada.Color = Color.LightPink;
             SeriesEntrada.IsValueShownAsLabel = true;
             seriesEntrada.LabelFormat = "C2";
@@ -176,20 +176,20 @@ namespace progamacaoapp
                 com.getConexao();
                 string query = "Select data_lancamento, valor, tipo from financeiro";
 
-                mysqldataAdapter adapter = new MySqlDataAdapter(query, com);
-                adapter.fill(dtMovimentacao);
+                MySqlDataAdapter adapter = new MySqlDataAdapter(query, com);
+                adapter.Fill(dtMovimentacao);
 
                 ProcessarDadosGraficos(dtMovimentacao);
 
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao gerar re");
+                MessageBox.Show("Erro ao gerar relatório");
             }
         }
         private void ProcessarDadosGraficos(DataTable dados)
         {
-            foreach (var series in fluxoCaixa.Series)
+            foreach (var series in fluxocaixa.Series)
             {
                 series.Points.Clear();
             }
@@ -198,11 +198,37 @@ namespace progamacaoapp
 
 
                 DateTime data = row.Field<DateTime>("data_lancamento");
-            }).OrderBy(global => global.Key);
+                return data.Date;
+            })
+                .OrderBy(g => g.Key);
+            foreach (var grupo in grupos)
+            {
+                string label;
+                label = grupo.Key.ToString("dd/MM");
 
-            fluxocaixa.ChartAreas["MainArea"].AxisX.LabelStyle.Formar = "dd/mm"
-        decimal entradas = grupos.Where(ref=> ref.Field<string>("Tipo") == "Entrada").Sum(r => r.fiel<deciaml>("valor"));
-            fluxocaixa.Series["Entradas"].Points.AddXY(Label, entrada);
+                decimal entradas = grupos.Where(r => r.Field<string>("Tipo") == "Entrada".Sum(r => r.Field<decimal>("Valor")));
+                decimal saídas = grupos.Where(r => r.Field<string>("Tipo") == "Saída".Sum(r => r.Field<decimal>("Valor")));
+                decimal saldo = entradas - saídas;
+
+                fluxocaixa.Series["Saídas"].Points.AddXY(label, saídas);
+                fluxocaixa.Series["Saldo"].Points.AddXY(label, saldo);
+                fluxocaixa.Series["Entradas"].Points.AddXY(Label, entradas);
+
+
+            }
+            string tituloGrafico = "Fluxo de Caixa Diário";
+            fluxocaixa.Ttitles.Clear();
+            fluxocaixa.Titles.Add(tituloGrafico);
+        }
+
+        private void Forms2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Forms2_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

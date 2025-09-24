@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Windows.Forms.DataVisualization.Charting;
 namespace progamacaoapp
 {
     public partial class grafico : Form
@@ -29,7 +29,7 @@ namespace progamacaoapp
                 string query = "Select data_lancamento, valor, tipo from financeiro";
 
                 mysqldataAdapter adapter = new MySqlDataAdapter(query, com);
-                adapter.fill(dtMovimentacao);
+                adapter.Fill(dtMovimentacao);
 
                 ProcessarDadosGraficos(dtMovimentacao);
 
@@ -53,13 +53,17 @@ namespace progamacaoapp
             }).OrderBy(global => global.Key);
 
             fluxocaixa.ChartAreas["MainArea"].AxisX.LabelStyle.Formar = "dd/mm"
-        decimal entradas = grupos.Where(ref=> ref.Field<string>("Tipo") == "Entrada").Sum(r => r.fiel<deciaml>("valor"));
+        decimal entradas = grupos.Where(r=> r.Field<string>("Tipo") == "Entrada").Sum(r => r.fiel<deciaml>("valor"));
             fluxocaixa.Series["Entradas"].Points.AddXY(Label, entrada);
         }
 
         private void grafico_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private class mysqldataAdapter
+        {
         }
     }
 }
